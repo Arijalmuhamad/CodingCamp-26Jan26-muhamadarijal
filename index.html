@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Harfi Portfolio</title>
+  <title>Arijal.Dev | Full Stack Developer</title>
   <link rel="stylesheet" href="css/style.css">
 </head>
 
@@ -12,7 +12,7 @@
 
   <header>
     <nav class="navbar">
-      <div class="logo">HARFI<span>.</span></div>
+      <div class="logo">ARIJAL<span>.DEV</span></div>
       <ul class="nav-menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#portfolio">Works</a></li>
@@ -25,27 +25,100 @@
   <main>
     <section class="hero-section" id="home">
       <span class="status-badge">Available for projects</span>
-      <h1 class="hero-title">Creative Developer <br>Based in Indonesia.</h1>
-      <p class="hero-description">Helping brands build a digital presence with clean code and thoughtful design.</p>
+      <h1 class="hero-title">Hi <span id="user-name">Guest</span>, <br>Full Stack Developer.</h1>
+      <p class="hero-description">"Code. Learn. Improve." — Turning complex data into seamless digital experiences.</p>
     </section>
 
     <section class="work-section" id="portfolio">
       <h2 class="section-title">Selected Works</h2>
-
       <div class="work-grid">
         <div class="project-card">
           <div class="project-image-box"></div>
-          <p class="project-name">E-Commerce App</p>
+          <p class="project-name">Factory Weighing Dashboard</p>
+          <p class="project-desc">Real-time monitoring for vehicle transactions and weight data.</p>
         </div>
-
         <div class="project-card">
           <div class="project-image-box"></div>
-          <p class="project-name">Brand Identity</p>
+          <p class="project-name">LogiTract</p>
+          <p class="project-desc">Web-based system for fast logsheet approval and activity monitoring.</p>
         </div>
-
         <div class="project-card">
           <div class="project-image-box"></div>
-          <p class="project-name">Dashboard UI</p>
+          <p class="project-name">Sortase Mobile App</p>
+          <p class="project-desc">Lightweight Flutter app for accurate FFB sortation data input.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="about-section" id="about">
+      <div class="about-flex">
+        <div class="about-content">
+          <h2 class="section-title">About Me</h2>
+          <p class="about-text">
+            I’m a programmer who enjoys coding and continuously learning new things. I specialize in building
+            functional, clean applications that solve real-world problems.
+          </p>
+          <p class="about-text">
+            Currently based in Jakarta, I am expanding my expertise into Java while sharpening my skills in Full Stack
+            development.
+          </p>
+        </div>
+
+        <div class="about-skills">
+          <h3 class="skills-title">My Tech Stack</h3>
+          <div class="skills-grid">
+            <div class="skill-item">HTML/CSS</div>
+            <div class="skill-item">JavaScript</div>
+            <div class="skill-item">PHP/Laravel</div>
+            <div class="skill-item">Flutter</div>
+            <div class="skill-item">MySQL</div>
+            <div class="skill-item">Java (Learning)</div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="message-section">
+      <div class="message-wrapper">
+        <div class="form-container">
+          <h2 class="section-title">Message Us</h2>
+          <form id="contactForm">
+            <div class="input-row">
+              <label>Nama</label>
+              <span>:</span>
+              <input type="text" id="form-nama" placeholder="Nama" required>
+            </div>
+            <div class="input-row">
+              <label>Tanggal Lahir</label>
+              <span>:</span>
+              <input type="date" id="form-tgl" required>
+            </div>
+            <div class="input-row">
+              <label>Jenis Kelamin</label>
+              <span>:</span>
+              <div class="radio-group">
+                <input type="radio" name="jk" value="Laki-Laki" checked> Laki-Laki
+                <input type="radio" name="jk" value="Perempuan"> Perempuan
+              </div>
+            </div>
+            <div class="input-row">
+              <label>Pesan</label>
+              <span>:</span>
+              <textarea id="form-pesan" placeholder="Pesan" required></textarea>
+            </div>
+            <button type="submit" class="submit-btn">Submit</button>
+          </form>
+        </div>
+
+        <div class="result-container" id="result-box">
+          <div class="result-content">
+            <p><strong>Current time :</strong> <span id="res-time"></span></p>
+            <br>
+            <p><strong>Nama :</strong> <span id="res-nama"></span></p>
+            <p><strong>Tanggal Lahir :</strong> <span id="res-tgl"></span></p>
+            <p><strong>Jenis Kelamin :</strong> <span id="res-jk"></span></p>
+            <p><strong>Pesan :</strong> <span id="res-pesan"></span></p>
+          </div>
         </div>
       </div>
     </section>
@@ -54,13 +127,11 @@
       <div class="contact-container">
         <span class="contact-label">Have a project in mind?</span>
         <h2 class="contact-title">Let's work together<span>.</span></h2>
-
         <div class="email-area">
-          <a href="mailto:hello@harfi.com" class="email-link">hello@harfi.com</a>
+          <a href="mailto:muhammadarijal03@gmail.com" class="email-link">muhammadarijal03@gmail.com</a>
           <div class="email-underline"></div>
         </div>
-
-        <p class="contact-info">Currently accepting new freelance opportunities.</p>
+        <p class="contact-info">Currently based in Jakarta, Indonesia.</p>
       </div>
     </section>
   </main>
@@ -68,34 +139,35 @@
   <footer class="footer">
     <div class="footer-top">
       <div class="footer-info">
-        <div class="logo">HARFI<span>.</span></div>
+        <div class="logo">ARIJAL<span>.DEV</span></div>
         <p>Building digital experiences with purpose.</p>
       </div>
-
       <div class="footer-links-group">
         <div class="footer-column">
           <h4>Explore</h4>
           <ul>
             <li><a href="#home">Home</a></li>
             <li><a href="#portfolio">Works</a></li>
+            <li><a href="#about">About</a></li>
           </ul>
         </div>
         <div class="footer-column">
           <h4>Social</h4>
           <ul>
-            <li><a href="#">LinkedIn</a></li>
-            <li><a href="#">GitHub</a></li>
+            <li><a href="https://www.linkedin.com/in/muhamad-arijal/" target="_blank">LinkedIn</a></li>
+            <li><a href="https://github.com/Arijalmuhamad" target="_blank">GitHub</a></li>
           </ul>
         </div>
       </div>
     </div>
-
     <div class="footer-bottom">
-      <p>© 2026 Harfi Novian. Built with ❤️</p>
-      <p>Indonesia</p>
+      <p>© 2026 Muhamad Arijal. Built with ❤️</p>
+      <p>Jakarta, Indonesia</p>
     </div>
   </footer>
 
+
+  <script src="js/script.js"></script>
 </body>
 
 </html>
