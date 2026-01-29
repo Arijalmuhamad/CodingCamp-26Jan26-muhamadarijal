@@ -1,5 +1,5 @@
 * {
-    box-sizing: border-box; /* Ensures padding doesn't break your 1366px width */
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
@@ -9,7 +9,7 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 20px 80px; /* Increased padding to match image margins */
+    padding: 20px 80px;
     border-bottom: 1px solid #ccc;
 }
 
@@ -25,7 +25,7 @@
 }
 
 .nav-links a {
-    text-decoration: none; /* Removes the blue underline from links */
+    text-decoration: none;
     color: black;
 }
 
@@ -37,18 +37,18 @@
     background-color: white;
     border-bottom: 2px solid #ccc;
 
-    /* Alignment for top-left text */
+
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     align-items: flex-start;
-    padding: 60px 80px; /* Adjusts the text position */
+    padding: 60px 80px;
 }
 
-/* 4. Other Sections */
+
 .headquarters, .message-us {
     width: 1366px;
-    min-height: 400px; /* Flexible height for content */
+    min-height: 400px;
     margin: 0 auto;
     padding: 40px 80px;
     background-color: white;
@@ -56,11 +56,11 @@
     text-align: center;
 }
 
-/* 5. Headquarters Circles */
+
 .city-cards {
     display: flex;
     justify-content: center;
-    gap: 100px; /* Wider gap to match the circles in the image */
+    gap: 100px;
     margin-top: 40px;
 }
 
@@ -71,7 +71,7 @@
 }
 
 .circle {
-    width: 150px; /* Slightly larger to match design */
+    width: 150px;
     height: 150px;
     border: 1px solid black;
     border-radius: 50%;
@@ -79,28 +79,25 @@
 }
 
 footer {
-    width: 1366px;       /* Matches the width of your other sections */
-    margin: 0 auto;      /* Centers the footer container */
-    padding: 20px 80px;  /* Matches the side padding of your navbar and hero */
-    text-align: right;   /* Pushes the "Created by" text to the right side */
+    width: 1366px;
+    margin: 0 auto;
+    padding: 20px 80px;
+    text-align: right;
     background-color: white;
-
-    /* Optional: If you want it to look like the image,
-       ensure there is a bit of space above it */
     margin-top: 20px;
 }
 
 footer p {
     font-size: 14px;
-    color: #555;         /* A slightly softer grey for the credit text */
+    color: #555;
 }
 
 body {
     display: flex;
     flex-direction: column;
-    min-height: 100vh; /* Takes up the full height of the browser */
+    min-height: 100vh;
 }
 
 footer {
-    margin-top: auto; /* Pushes the footer to the very bottom of the page */
+    margin-top: auto;
 }
