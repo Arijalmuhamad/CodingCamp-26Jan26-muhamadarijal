@@ -5,58 +5,93 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Website</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
-
   <header>
     <nav class="navbar">
-      <div class="logo">
-        <img src="your-logo.png" alt="Logo">
-      </div>
+      <div class="logo">HARFI<span>.</span></div>
       <ul class="nav-links">
-        <li><a href="#">Home</a></li>
-        <li><a href="#">Our Profile</a></li>
-        <li><a href="#">Portofolio</a></li>
-        <li><a href="#">Message Us</a></li>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#portfolio">Works</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact" class="cta-btn">Hire Me</a></li>
       </ul>
     </nav>
   </header>
 
   <main>
-    <section class="hero">
-      <h1>Hi Harfi, Welcome To Website</h1>
-      <p>Ini adalah website latihan pertama</p>
+    <section class="hero" id="home">
+      <span class="badge">Available for projects</span>
+      <h1>Creative Developer <br>Based in Indonesia.</h1>
+      <p>Helping brands build a digital presence with clean code and thoughtful design.</p>
     </section>
 
-    <section class="headquarters">
-      <h2>Our Headquarter</h2>
-      <div class="city-cards">
-        <div class="city">
-          <div class="circle"></div>
-          <p>Jakarta</p>
+    <section class="portfolio" id="portfolio">
+      <div class="section-header">
+        <h2>Selected Works</h2>
+      </div>
+      <div class="project-grid">
+        <div class="project-card">
+          <div class="project-img"></div>
+          <p>E-Commerce App</p>
         </div>
-        <div class="city">
-          <div class="circle"></div>
-          <p>Bandung</p>
+        <div class="project-card">
+          <div class="project-img"></div>
+          <p>Brand Identity</p>
         </div>
-        <div class="city">
-          <div class="circle"></div>
-          <p>Surabaya</p>
+        <div class="project-card">
+          <div class="project-img"></div>
+          <p>Dashboard UI</p>
         </div>
       </div>
     </section>
 
-    <section class="message-us">
-      <h2>Message Us</h2>
+    <section class="contact" id="contact">
+      <div class="contact-container">
+        <span class="contact-sub">Have a project in mind?</span>
+        <h2 class="contact-title">Let's work together<span>.</span></h2>
+        <div class="email-wrapper">
+          <a href="mailto:hello@harfi.com" class="email-link">hello@harfi.com</a>
+          <div class="underline"></div>
+        </div>
+        <p class="contact-note">Currently accepting new freelance opportunities.</p>
+      </div>
     </section>
   </main>
 
-  <footer>
-    <p>Created By RevoU</p>
-  </footer>
+  <footer class="main-footer">
+    <div class="footer-content">
+      <div class="footer-brand">
+        <div class="logo">HARFI<span>.</span></div>
+        <p>Building digital experiences with purpose.</p>
+      </div>
 
+      <div class="footer-links">
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#portfolio">Works</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Social</h4>
+          <ul>
+            <li><a href="#">LinkedIn</a></li>
+            <li><a href="#">GitHub</a></li>
+            <li><a href="#">Instagram</a></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      <p>© 2026 Harfi Novian. Built with ❤️</p>
+      <p>Indonesia</p>
+    </div>
+  </footer>
 </body>
 
 </html>
