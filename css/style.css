@@ -1,6 +1,5 @@
-/* =====================================================
-   1. SETUP & COLORS
-   ===================================================== */
+/* 1. SETUP & COLORS */
+
 :root {
   --primary-black: #000000;
   --modern-blue: #007aff;
@@ -24,11 +23,12 @@ body {
   line-height: 1.6;
   letter-spacing: 0.2px;
   color: #555;
+
+  background: linear-gradient(180deg, #ffffff 0%, #f6f8fb 40%, #ffffff 100%);
 }
 
-/* =====================================================
-   2. NAVIGATION
-   ===================================================== */
+/* 2. NAVIGATION */
+
 .navbar {
   display: flex;
   justify-content: space-between;
@@ -86,15 +86,20 @@ body {
   border-radius: 50px;
 }
 
-/* =====================================================
-   3. HERO SECTION
-   ===================================================== */
+/* 3. HERO SECTION */
+
 .hero-section {
   padding: 5rem 8% 4rem;
   height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+
+  background: radial-gradient(
+    circle at top left,
+    rgba(0, 122, 255, 0.08),
+    transparent 55%
+  );
 }
 
 #user-name {
@@ -121,12 +126,11 @@ body {
   max-width: 600px;
 }
 
-/* =====================================================
-   4. WORK / PORTFOLIO
-   ===================================================== */
+/* 4. WORK / PORTFOLIO */
+
 .work-section {
   padding: 100px 8%;
-  background-color: var(--light-bg);
+  background: linear-gradient(180deg, #f9fafb 0%, #f1f4f8 100%);
 }
 
 .section-title {
@@ -160,6 +164,21 @@ body {
   background-color: #eee;
   border-radius: 14px;
   margin-bottom: 14px;
+
+  background-size: cover;
+  background-position: center;
+}
+
+.project-card:nth-child(1) .project-image-box {
+  background-image: url("../assets/dashboard-mill-2.png");
+}
+
+.project-card:nth-child(2) .project-image-box {
+  background-image: url("../assets/LogiTrack.png");
+}
+
+.project-card:nth-child(3) .project-image-box {
+  background-image: url("../assets/sortase-apps.png");
 }
 
 .project-name {
@@ -181,12 +200,11 @@ body {
   color: var(--text-grey);
 }
 
-/* =====================================================
-   5. ABOUT / PROFILE
-   ===================================================== */
+/* 5. ABOUT / PROFILE */
+
 .about-section {
   padding: 100px 8%;
-  background: white;
+  background: linear-gradient(180deg, #ffffff 0%, #fafafa 100%);
 }
 
 .about-flex {
@@ -232,11 +250,11 @@ body {
   font-weight: 500;
 }
 
-/* =====================================================
-   6. MESSAGE US
-   ===================================================== */
+/* 6. MESSAGE US */
+
 .message-section {
   padding: 100px 8%;
+  background: linear-gradient(180deg, #f7f9fc 0%, #ffffff 100%);
 }
 
 .message-wrapper {
@@ -371,11 +389,15 @@ body {
   border: 1px solid #e5e7eb;
 }
 
-/* =====================================================
-   7. CONTACT
-   ===================================================== */
+/* 7. CONTACT */
+
 .contact-section {
   padding: 100px 8%;
+  background: radial-gradient(
+    circle at bottom right,
+    rgba(0, 122, 255, 0.06),
+    transparent 60%
+  );
 }
 
 .contact-label {
@@ -400,9 +422,8 @@ body {
   text-decoration: none;
 }
 
-/* =====================================================
-   8. FOOTER
-   ===================================================== */
+/* 8. FOOTER */
+
 .footer {
   padding: 80px 8% 30px;
   border-top: 1px solid #eee;
@@ -439,9 +460,7 @@ body {
   color: #bbb;
 }
 
-/* =====================================================
-   RESPONSIVE
-   ===================================================== */
+/* RESPONSIVE */
 
 .hamburger {
   display: none;

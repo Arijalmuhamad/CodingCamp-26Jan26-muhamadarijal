@@ -22,24 +22,24 @@ document.addEventListener("DOMContentLoaded", () => {
 
     // ================= VALIDATION =================
     if (nama === "") {
-      alert("Nama tidak boleh kosong!");
+      alert("Name cannot be empty.");
       namaInput.focus();
       return;
     }
 
     if (tgl === "") {
-      alert("Tanggal lahir wajib diisi!");
+      alert("Date of birth is required.");
       tglInput.focus();
       return;
     }
 
     if (!jkInput) {
-      alert("Silakan pilih jenis kelamin!");
+      alert("Please select your gender.");
       return;
     }
 
     if (pesan === "") {
-      alert("Pesan tidak boleh kosong!");
+      alert("Message cannot be empty.");
       pesanInput.focus();
       return;
     }
@@ -61,12 +61,6 @@ document.addEventListener("DOMContentLoaded", () => {
     // ================= SHOW RESULT BOX =================
     const resultBox = document.getElementById("result-box");
     resultBox.classList.add("show");
-
-    // // ================= SCROLL TO TOP =================
-    // window.scrollTo({
-    //   top: 0,
-    //   behavior: 'smooth'
-    // });
 
     resultBox.scrollIntoView({
       behavior: "smooth",
