@@ -11,7 +11,15 @@
     <header>
       <nav class="navbar">
         <div class="logo">ARIJAL<span>.DEV</span></div>
-        <ul class="nav-menu">
+
+        <!-- HAMBURGER MENU (MOBILE) -->
+        <div class="hamburger" id="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <ul class="nav-menu" id="navMenu">
           <li><a href="#home">Home</a></li>
           <li><a href="#profile">Our Profile</a></li>
           <li><a href="#portfolio">Portofolio</a></li>
@@ -25,26 +33,27 @@
       <section class="hero-section" id="home">
         <span class="status-badge">Personal Profile Website</span>
         <h1 class="hero-title">
-          Hi <span id="user-name">Guest</span>, <br />
-          Full Stack Developer.
+          Hi <span id="user-name">there</span>, <br />
+          Welcome to My Website
         </h1>
         <p class="hero-description">
-          This website is a personal profile created to introduce who I am,
-          showcase my work, and demonstrate simple web interactions using
-          JavaScript.
+          I’m a developer who enjoys building real-world applications, from web
+          dashboards to mobile apps. This website is a small space where I share
+          who I am, what I’ve built, and how I keep growing as a developer.
         </p>
       </section>
 
       <!-- PORTOFOLIO -->
       <section class="work-section" id="portfolio">
         <h2 class="section-title">Selected Works</h2>
+
         <div class="work-grid">
           <div class="project-card">
             <div class="project-image-box"></div>
             <p class="project-name">Factory Weighing Dashboard</p>
             <p class="project-desc">
-              A web-based dashboard developed to monitor weighing transactions
-              and operational data.
+              A web-based dashboard built to monitor weighing transactions and
+              operational data in an industrial environment.
             </p>
           </div>
 
@@ -52,8 +61,8 @@
             <div class="project-image-box"></div>
             <p class="project-name">LogiTract</p>
             <p class="project-desc">
-              An internal system designed to manage activity tracking,
-              approvals, and reporting.
+              An internal system developed to handle activity tracking, approval
+              workflows, and reporting processes.
             </p>
           </div>
 
@@ -61,8 +70,8 @@
             <div class="project-image-box"></div>
             <p class="project-name">Sortation Mobile App</p>
             <p class="project-desc">
-              A mobile application built using Flutter for recording and
-              managing sortation data.
+              A Flutter-based mobile application used for recording and managing
+              sortation data efficiently.
             </p>
           </div>
         </div>
@@ -75,15 +84,17 @@
             <h2 class="section-title">Our Profile</h2>
 
             <p class="about-text">
-              This website was created as a personal profile to present
-              information about myself, my skills, and several projects that I
-              have developed.
+              I’m a developer with experience in building web and mobile
+              applications. I mainly work with HTML, CSS, JavaScript, PHP,
+              Laravel, and Flutter, and I continuously learn new technologies to
+              improve my skills.
             </p>
 
             <p class="about-text">
-              I enjoy building simple and functional applications, and I
-              continue learning to improve my skills in web and mobile
-              development.
+              I enjoy working on practical projects that solve real problems,
+              such as internal systems, dashboards, and data-driven
+              applications. For me, programming is not just about writing code,
+              but about turning ideas into useful solutions.
             </p>
           </div>
 
@@ -109,8 +120,8 @@
             <h2 class="section-title">Message Us</h2>
 
             <p class="about-text">
-              This form allows visitors to send a message and see how user input
-              is processed and displayed dynamically using JavaScript.
+              Feel free to leave a message. This section demonstrates how user
+              input can be processed and displayed dynamically using JavaScript.
             </p>
 
             <form id="contactForm" novalidate>
@@ -170,18 +181,15 @@
       <!-- CONTACT -->
       <section class="contact-section" id="contact">
         <div class="contact-container">
-          <span class="contact-label">Contact</span>
-          <h2 class="contact-title">Get in Touch<span>.</span></h2>
+          <span class="contact-label">Have a project in mind?</span>
+          <h2 class="contact-title">Let’s Work Together<span>.</span></h2>
           <div class="email-area">
             <a href="mailto:muhammadarijal03@gmail.com" class="email-link">
               muhammadarijal03@gmail.com
             </a>
             <div class="email-underline"></div>
           </div>
-          <p class="contact-info">
-            If you would like to know more or get in touch, feel free to contact
-            me via email.
-          </p>
+          <p class="contact-info">Currently based in Jakarta, Indonesia.</p>
         </div>
       </section>
     </main>
@@ -190,10 +198,7 @@
       <div class="footer-top">
         <div class="footer-info">
           <div class="logo">ARIJAL<span>.DEV</span></div>
-          <p>
-            A simple personal profile website built to showcase skills and
-            projects.
-          </p>
+          <p>Building digital experiences with purpose.</p>
         </div>
 
         <div class="footer-links-group">

@@ -20,6 +20,12 @@ html {
   scroll-behavior: smooth;
 }
 
+body {
+  line-height: 1.6;
+  letter-spacing: 0.2px;
+  color: #555;
+}
+
 /* =====================================================
    2. NAVIGATION
    ===================================================== */
@@ -54,6 +60,23 @@ html {
   text-decoration: none;
   color: var(--primary-black);
   font-weight: 500;
+  position: relative;
+}
+
+/* underline hover */
+.nav-menu a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -5px;
+  width: 0;
+  height: 2px;
+  background: currentColor;
+  transition: width 0.3s ease;
+}
+
+.nav-menu a:hover::after {
+  width: 100%;
 }
 
 .hire-button {
@@ -67,11 +90,15 @@ html {
    3. HERO SECTION
    ===================================================== */
 .hero-section {
-  padding: 100px 8%;
+  padding: 5rem 8% 4rem;
   height: 80vh;
   display: flex;
   flex-direction: column;
   justify-content: center;
+}
+
+#user-name {
+  color: var(--modern-blue);
 }
 
 .status-badge {
@@ -84,18 +111,18 @@ html {
 
 .hero-title {
   font-size: 60px;
-  line-height: 1.1;
+  line-height: 1.2;
   margin-bottom: 20px;
 }
 
 .hero-description {
   font-size: 18px;
   color: var(--text-grey);
-  max-width: 500px;
+  max-width: 600px;
 }
 
 /* =====================================================
-   4. WORK SECTION
+   4. WORK / PORTFOLIO
    ===================================================== */
 .work-section {
   padding: 100px 8%;
@@ -104,7 +131,7 @@ html {
 
 .section-title {
   font-size: 32px;
-  margin-bottom: 40px;
+  margin-bottom: 2rem;
 }
 
 .work-grid {
@@ -113,32 +140,49 @@ html {
   gap: 40px;
 }
 
-.project-image-box {
-  width: 100%;
-  aspect-ratio: 16/10;
-  background-color: #eee;
-  border-radius: 15px;
-  transition: 0.3s;
+.project-card {
+  background: #ffffff;
+  border-radius: 18px;
+  padding: 18px;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
 }
 
-.project-card:hover .project-image-box {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
+.project-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 16px 32px rgba(0, 0, 0, 0.08);
+}
+
+.project-image-box {
+  width: 100%;
+  aspect-ratio: 16 / 10;
+  background-color: #eee;
+  border-radius: 14px;
+  margin-bottom: 14px;
 }
 
 .project-name {
-  margin-top: 15px;
-  margin-bottom: 8px;
+  margin-top: 0;
+  margin-bottom: 6px;
   font-weight: 600;
+  color: #111;
 }
 
 .project-desc {
   font-size: 14px;
+  line-height: 1.6;
+  color: var(--text-grey);
+}
+
+.project-desc {
+  font-size: 14px;
+  line-height: 1.6;
   color: var(--text-grey);
 }
 
 /* =====================================================
-   5. ABOUT SECTION
+   5. ABOUT / PROFILE
    ===================================================== */
 .about-section {
   padding: 100px 8%;
@@ -158,7 +202,6 @@ html {
 .about-text {
   font-size: 18px;
   line-height: 1.6;
-  color: #333;
   margin-bottom: 20px;
 }
 
@@ -184,17 +227,16 @@ html {
 .skill-item {
   padding: 8px 16px;
   border: 1px solid #eee;
-  border-radius: 4px;
+  border-radius: 6px;
   font-size: 14px;
   font-weight: 500;
 }
 
 /* =====================================================
-   6. MESSAGE US SECTION
+   6. MESSAGE US
    ===================================================== */
 .message-section {
   padding: 100px 8%;
-  background-color: var(--white);
 }
 
 .message-wrapper {
@@ -258,13 +300,6 @@ html {
   gap: 6px;
 }
 
-.error-text {
-  font-size: 12px;
-  color: #e53935;
-  min-height: 14px;
-  margin-top: 4px;
-}
-
 .submit-btn {
   width: 100%;
   padding: 12px;
@@ -281,72 +316,15 @@ html {
   color: white;
 }
 
-/* =================== RESULT (REDESIGN) =================== */
+/* RESULT */
 .result-container {
   flex: 1;
   min-width: 350px;
-  background: var(--white);
+  background: #fafafa;
   border-radius: 12px;
   border: 1px solid #eee;
   padding: 30px;
-}
 
-.result-title {
-  font-size: 18px;
-  font-weight: 600;
-  margin-bottom: 20px;
-  color: #111;
-}
-
-/* Content */
-.result-content {
-  padding: 0;
-}
-
-.result-content p {
-  display: flex;
-  justify-content: space-between;
-  gap: 20px;
-  margin-bottom: 14px;
-  font-size: 14px;
-}
-
-.result-content strong {
-  color: #666;
-  font-weight: 500;
-  min-width: 140px;
-}
-
-.result-content span {
-  color: #111;
-}
-
-#res-pesan {
-  display: block;
-  background: #fafafa;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #eee;
-  font-size: 14px;
-}
-
-/* Highlight time */
-#res-time {
-  color: var(--modern-blue);
-  font-weight: 600;
-}
-
-/* Pesan box */
-#res-pesan {
-  display: block;
-  background: #f9fafb;
-  padding: 12px;
-  border-radius: 8px;
-  border: 1px solid #e5e7eb;
-}
-
-/* ===== RESULT ANIMATION ===== */
-.result-container {
   opacity: 0;
   transform: translateY(15px);
   pointer-events: none;
@@ -361,8 +339,40 @@ html {
   pointer-events: auto;
 }
 
+.result-title {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+.result-content p {
+  display: flex;
+  gap: 20px;
+  margin-bottom: 12px;
+  font-size: 14px;
+}
+
+.result-content strong {
+  min-width: 140px;
+  color: #666;
+  font-weight: 500;
+}
+
+#res-time {
+  color: var(--modern-blue);
+  font-weight: 600;
+}
+
+#res-pesan {
+  display: block;
+  background: #f9fafb;
+  padding: 12px;
+  border-radius: 8px;
+  border: 1px solid #e5e7eb;
+}
+
 /* =====================================================
-   7. CONTACT SECTION
+   7. CONTACT
    ===================================================== */
 .contact-section {
   padding: 100px 8%;
@@ -384,28 +394,17 @@ html {
   color: var(--modern-blue);
 }
 
-.email-area {
-  display: inline-block;
-  margin-top: 10px;
-}
-
 .email-link {
   font-size: 28px;
   color: var(--primary-black);
   text-decoration: none;
 }
 
-.email-underline {
-  height: 1px;
-  background: var(--primary-black);
-  margin-top: 5px;
-}
-
 /* =====================================================
    8. FOOTER
    ===================================================== */
 .footer {
-  padding: 80px 8% 30px 8%;
+  padding: 80px 8% 30px;
   border-top: 1px solid #eee;
 }
 
@@ -425,10 +424,6 @@ html {
   margin-bottom: 15px;
 }
 
-.footer-column ul {
-  list-style: none;
-}
-
 .footer-column a {
   text-decoration: none;
   color: var(--text-grey);
@@ -445,23 +440,54 @@ html {
 }
 
 /* =====================================================
-   9. MISC
+   RESPONSIVE
    ===================================================== */
-#user-name {
-  color: var(--modern-blue);
+
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 6px;
+  cursor: pointer;
+}
+
+.hamburger span {
+  width: 24px;
+  height: 2px;
+  background-color: var(--primary-black);
+  transition: 0.3s;
 }
 
 @media (max-width: 768px) {
-  .form-container,
-  .result-container {
-    padding: 20px;
+  .navbar {
+    padding: 16px 6%;
   }
 
-  .result-content p {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-menu {
+    position: absolute;
+    top: 70px;
+    left: 0;
+    width: 100%;
+    background: white;
     flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    padding: 30px 0;
+
+    border-bottom: 1px solid #eee;
+
+    opacity: 0;
+    pointer-events: none;
+    transform: translateY(-10px);
+    transition: 0.3s ease;
   }
 
-  .result-content strong {
-    margin-bottom: 4px;
+  .nav-menu.active {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
   }
 }
